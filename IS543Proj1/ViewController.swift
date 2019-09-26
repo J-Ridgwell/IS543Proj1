@@ -15,6 +15,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    // MARK - Segues
+    
+    @IBAction func exitModalScene(_ segue: UIStoryboardSegue) {
+        
+    }
 }
 
