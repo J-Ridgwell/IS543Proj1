@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF35AA93233DC0D000CB8879 /* PushupData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF35AA92233DC0D000CB8879 /* PushupData.swift */; };
+		CF35AA95233DC9DB00CB8879 /* AddItViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF35AA94233DC9DB00CB8879 /* AddItViewController.swift */; };
+		CF35AA9B233E831F00CB8879 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF35AA9A233E831F00CB8879 /* HistoryViewController.swift */; };
 		CF6D1106233C30A700CC8510 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6D1105233C30A700CC8510 /* AppDelegate.swift */; };
 		CF6D1108233C30A700CC8510 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6D1107233C30A700CC8510 /* SceneDelegate.swift */; };
-		CF6D110A233C30A700CC8510 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6D1109233C30A700CC8510 /* ViewController.swift */; };
 		CF6D110D233C30A700CC8510 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF6D110B233C30A700CC8510 /* Main.storyboard */; };
 		CF6D110F233C30A800CC8510 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF6D110E233C30A800CC8510 /* Assets.xcassets */; };
 		CF6D1112233C30A800CC8510 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF6D1110233C30A800CC8510 /* LaunchScreen.storyboard */; };
+		CFDF8B8F233EB1BB00463EFC /* PushupSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDF8B8E233EB1BB00463EFC /* PushupSession.swift */; };
+		CFDF8B93233EC97800463EFC /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDF8B92233EC97800463EFC /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF35AA92233DC0D000CB8879 /* PushupData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushupData.swift; sourceTree = "<group>"; };
+		CF35AA94233DC9DB00CB8879 /* AddItViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItViewController.swift; sourceTree = "<group>"; };
+		CF35AA9A233E831F00CB8879 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		CF6D1102233C30A700CC8510 /* IS543Proj1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IS543Proj1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF6D1105233C30A700CC8510 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF6D1107233C30A700CC8510 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CF6D1109233C30A700CC8510 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CF6D110C233C30A700CC8510 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CF6D110E233C30A800CC8510 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF6D1111233C30A800CC8510 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF6D1113233C30A800CC8510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFDF8B8E233EB1BB00463EFC /* PushupSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushupSession.swift; sourceTree = "<group>"; };
+		CFDF8B92233EC97800463EFC /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +45,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF35AA8E233DBF6E00CB8879 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				CF6D110E233C30A800CC8510 /* Assets.xcassets */,
+				CF6D1105233C30A700CC8510 /* AppDelegate.swift */,
+				CF6D1107233C30A700CC8510 /* SceneDelegate.swift */,
+				CF6D1110233C30A800CC8510 /* LaunchScreen.storyboard */,
+				CF6D1113233C30A800CC8510 /* Info.plist */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		CF35AA8F233DBFFD00CB8879 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CF35AA92233DC0D000CB8879 /* PushupData.swift */,
+				CFDF8B8E233EB1BB00463EFC /* PushupSession.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF35AA90233DC00500CB8879 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF6D110B233C30A700CC8510 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF35AA91233DC00F00CB8879 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CF35AA9A233E831F00CB8879 /* HistoryViewController.swift */,
+				CF35AA94233DC9DB00CB8879 /* AddItViewController.swift */,
+				CFDF8B92233EC97800463EFC /* WebViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		CF6D10F9233C30A700CC8510 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +103,10 @@
 		CF6D1104233C30A700CC8510 /* IS543Proj1 */ = {
 			isa = PBXGroup;
 			children = (
-				CF6D1105233C30A700CC8510 /* AppDelegate.swift */,
-				CF6D1107233C30A700CC8510 /* SceneDelegate.swift */,
-				CF6D1109233C30A700CC8510 /* ViewController.swift */,
-				CF6D110B233C30A700CC8510 /* Main.storyboard */,
-				CF6D110E233C30A800CC8510 /* Assets.xcassets */,
-				CF6D1110233C30A800CC8510 /* LaunchScreen.storyboard */,
-				CF6D1113233C30A800CC8510 /* Info.plist */,
+				CF35AA8F233DBFFD00CB8879 /* Model */,
+				CF35AA90233DC00500CB8879 /* View */,
+				CF35AA91233DC00F00CB8879 /* Controller */,
+				CF35AA8E233DBF6E00CB8879 /* SupportingFiles */,
 			);
 			path = IS543Proj1;
 			sourceTree = "<group>";
@@ -138,9 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF6D110A233C30A700CC8510 /* ViewController.swift in Sources */,
+				CF35AA93233DC0D000CB8879 /* PushupData.swift in Sources */,
 				CF6D1106233C30A700CC8510 /* AppDelegate.swift in Sources */,
+				CF35AA95233DC9DB00CB8879 /* AddItViewController.swift in Sources */,
+				CFDF8B8F233EB1BB00463EFC /* PushupSession.swift in Sources */,
+				CF35AA9B233E831F00CB8879 /* HistoryViewController.swift in Sources */,
 				CF6D1108233C30A700CC8510 /* SceneDelegate.swift in Sources */,
+				CFDF8B93233EC97800463EFC /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +335,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 773WNUNYUG;
 				INFOPLIST_FILE = IS543Proj1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +343,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Prometheus.IS543Proj1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,6 +354,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 773WNUNYUG;
 				INFOPLIST_FILE = IS543Proj1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Prometheus.IS543Proj1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
