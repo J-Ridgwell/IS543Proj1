@@ -30,8 +30,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="cG3-yA-zVf" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="Dfz-kP-o25"/>
+                            <constraint firstItem="qXN-6i-tiR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="G55-AN-kQ2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cG3-yA-zVf" secondAttribute="bottom" constant="409" id="Lju-hv-BcV"/>
-                            <constraint firstItem="qXN-6i-tiR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="117" id="QsJ-Wg-0p3"/>
                             <constraint firstItem="cG3-yA-zVf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="SxB-g0-IXc"/>
                             <constraint firstItem="cG3-yA-zVf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="TJj-WX-efL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qXN-6i-tiR" secondAttribute="bottom" constant="82" id="dK0-mu-E7o"/>
@@ -80,7 +80,6 @@
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="right" adjustsFontSizeToFit="NO" minimumFontSize="26" translatesAutoresizingMaskIntoConstraints="NO" id="vUq-XJ-f8e">
                                 <rect key="frame" x="353.5" y="150" width="40.5" height="34"/>
-                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
