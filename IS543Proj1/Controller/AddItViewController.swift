@@ -61,25 +61,26 @@ class AddItViewController: UIViewController {
         history.set(try? PropertyListEncoder().encode(PushupData.sharedInstance),
                     forKey: "pushupSessions")
 
-        
-        history.synchronize()
+                history.synchronize()
     }
     
     private func restoreHistory() {
         let history = UserDefaults.standard
         
         
+        // Find encoded obj in storage
         guard let pushupSessionHistory = history.object(forKey: "pushupSessions") as? Data else {
             print("error in hist")
             return
         }
         
-        // Use PropertyListDecoder to convert Data into Player
+        // Use PropertyListDecoder to convert Data into PushupData
         guard let oldPushupData = try? PropertyListDecoder().decode(PushupData.self, from: pushupSessionHistory) else {
             print("Error in decode")
             return
         }
         
+        // Add stored data to singleton
         PushupData.sharedInstance.setSessions(sessions: oldPushupData.pushupSessions)
 
         PushupData.sharedInstance.setTotalPushups(total: oldPushupData.totalPushups) 

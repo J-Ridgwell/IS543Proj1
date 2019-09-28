@@ -45,6 +45,8 @@ class PushupData: Codable {
         self.totalPushups = total
     }
     
+    // Conforming PushupData to Codable protocol
+    
     private enum CodingKeys: String, CodingKey {
         case pushupSessions
         case totalPushups
